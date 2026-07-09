@@ -1,3 +1,15 @@
-#Create a Pod named nginx and use the latest nginx image
-kubectl run nginx --image nginx:latest
+#Create a Pod named nginx and use the latest nginx image in test namespace
+kubectl run nginx --image nginx:latest -n test
+
+#view pods in test namespace
+kubectl get pods -n test
+
+#Get pod details
+kubectl describe pod nginx -n test
+
+#scale replicaset
+kubectl replace -f replicaset-definition.yml
+kubectl scale --replicas=6 -f replicaset-definition.yml
+
+
 
