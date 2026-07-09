@@ -1,0 +1,9 @@
+#Check etcdctl version
+./etcdctl --version
+
+#Switch to V3 instead of V2
+ETCDCTL_API=3 ./etcdctl version
+or
+export ETCDCTL_API=3
+./etcdctl version
+
