@@ -1,0 +1,3 @@
+#Create a Pod named nginx and use the latest nginx image
+kubectl run nginx --image nginx:latest
+
