@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: myapp-replica
+  namespace: test
   labels:
     app: myapp
     tier: frontend
